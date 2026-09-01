@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salvando Vidas | Clínicas parceiras no Espírito Santo</title>
+<meta name="description" content="Encontre informações sobre clínicas parceiras no Espírito Santo e conheça opções de atendimento.">
+<style>
+:root{--primary:#176b5b;--primary2:#0f5145;--light:#f3f8f6;--text:#17312b;--muted:#5d6d68;--white:#fff;--border:#dbe7e3}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.55}
+header{background:linear-gradient(135deg,var(--primary2),var(--primary));color:#fff;padding:18px 6%}
+.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:800}.nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{background:var(--light);padding:70px 6%}.hero-inner{max-width:1100px;margin:auto}
+.badge{display:inline-block;background:#dceee9;color:var(--primary2);padding:7px 12px;border-radius:999px;font-weight:700;font-size:13px}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.05;margin:18px 0 14px;max-width:760px}
+.hero p{font-size:19px;color:var(--muted);max-width:700px}
+.btn{display:inline-block;background:var(--primary);color:#fff;text-decoration:none;border-radius:10px;padding:13px 18px;font-weight:700;margin-top:12px}
+section{padding:55px 6%}.wrap{max-width:1100px;margin:auto}
+h2{font-size:32px;margin:0 0 12px}.sub{color:var(--muted);margin-top:0}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}
+select,input{padding:13px;border:1px solid var(--border);border-radius:9px;font-size:16px;background:#fff}
+select{min-width:230px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{border:1px solid var(--border);border-radius:14px;padding:22px;background:#fff;box-shadow:0 4px 18px rgba(0,0,0,.04)}
+.card h3{margin:0 0 5px}.city{font-size:14px;color:var(--muted)}.card p{color:var(--muted)}
+.card .btn{margin-right:7px}
+.info{background:var(--light)}
+footer{background:#12352e;color:#dfece8;padding:30px 6%;font-size:14px}
+.small{font-size:13px;color:var(--muted)}
+.hidden{display:none}
+@media(max-width:650px){.nav a{display:none}.hero{padding:48px 6%}section{padding:42px 6%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">Salvando Vidas</div>
+    <nav><a href="#clinicas">Clínicas</a><a href="#como">Como funciona</a><a href="#contato">Contato</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <span class="badge">Espírito Santo</span>
+    <h1>Encontre informações sobre clínicas parceiras</h1>
+    <p>Um espaço para consultar opções de atendimento, conhecer as clínicas cadastradas e encontrar os canais oficiais de contato.</p>
+    <a class="btn" href="#clinicas">Ver clínicas</a>
+  </div>
+</section>
+
+<section id="clinicas">
+  <div class="wrap">
+    <h2>Clínicas parceiras</h2>
+    <p class="sub">Selecione uma cidade para encontrar as opções cadastradas.</p>
+    <div class="filters">
+      <select id="city">
+        <option value="">Todas as cidades</option>
+        <option>Vitória</option><option>Vila Velha</option><option>Serra</option>
+        <option>Cariacica</option><option>Guarapari</option><option>Linhares</option><option>Colatina</option>
+      </select>
+      <input id="search" type="search" placeholder="Pesquisar clínica">
+    </div>
+
+    <div class="grid" id="cards">
+      <article class="card" data-city="Vitória">
+        <h3>Clínica parceira — Vitória</h3><div class="city">Vitória, ES</div>
+        <p>Cadastro demonstrativo. Substitua pelos dados reais da clínica antes de publicar.</p>
+        <a class="btn" href="#contato">Ver contato</a>
+      </article>
+      <article class="card" data-city="Vila Velha">
+        <h3>Clínica parceira — Vila Velha</h3><div class="city">Vila Velha, ES</div>
+        <p>Cadastro demonstrativo. Substitua pelos dados reais da clínica antes de publicar.</p>
+        <a class="btn" href="#contato">Ver contato</a>
+      </article>
+      <article class="card" data-city="Serra">
+        <h3>Clínica parceira — Serra</h3><div class="city">Serra, ES</div>
+        <p>Cadastro demonstrativo. Substitua pelos dados reais da clínica antes de publicar.</p>
+        <a class="btn" href="#contato">Ver contato</a>
+      </article>
+    </div>
+    <p class="small">Os cadastros acima são apenas exemplos. Não publique informações fictícias como se fossem clínicas reais.</p>
+  </div>
+</section>
+
+<section id="como" class="info">
+  <div class="wrap">
+    <h2>Como funciona</h2>
+    <div class="grid">
+      <div class="card"><h3>1. Escolha a cidade</h3><p>Use o filtro para localizar as opções cadastradas.</p></div>
+      <div class="card"><h3>2. Conheça a clínica</h3><p>Confira as informações fornecidas pela clínica parceira.</p></div>
+      <div class="card"><h3>3. Entre em contato</h3><p>Use os canais oficiais informados no cadastro para tirar dúvidas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <h2>Quer cadastrar uma clínica?</h2>
+    <p class="sub">Entre em contato com o responsável pelo projeto para solicitar o cadastro.</p>
+    <a class="btn" href="mailto:SEUEMAIL@EXEMPLO.COM">Solicitar cadastro</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>Salvando Vidas</strong><br>
+    Diretório informativo de clínicas parceiras.<br><br>
+    <span>Este site não substitui avaliação profissional. Em situações de emergência, procure o serviço de emergência adequado.</span>
+  </div>
+</footer>
+
+<script>
+const city=document.getElementById('city'), search=document.getElementById('search');
+function filter(){
+  const c=city.value.toLowerCase(), q=search.value.toLowerCase();
+  document.querySelectorAll('#cards .card').forEach(card=>{
+    const okCity=!c || card.dataset.city.toLowerCase()===c;
+    const okText=!q || card.innerText.toLowerCase().includes(q);
+    card.classList.toggle('hidden',!(okCity&&okText));
+  });
+}
+city.addEventListener('change',filter); search.addEventListener('input',filter);
+</script>
+</body>
+</html>
